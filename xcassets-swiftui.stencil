@@ -81,6 +81,8 @@ import SwiftUI
 }
 
 {{accessModifier}} extension Color {
+  /// Creates a named color.
+  /// - Parameter asset: the color resource to lookup.
   init(_ asset: {{colorType}}) {
     let bundle = Bundle(for: BundleToken.self)
     self.init(asset.name, bundle: bundle)
@@ -96,6 +98,8 @@ import SwiftUI
 }
 
 {{accessModifier}} extension Image {
+  /// Creates a labeled image that you can use as content for controls.
+  /// - Parameter asset: the image resource to lookup.
   init(_ asset: {{imageType}}) {
     let bundle = Bundle(for: BundleToken.self)
     self.init(asset.name, bundle: bundle)

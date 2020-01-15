@@ -4,6 +4,9 @@ This template is a fork of [SwiftGen's bundled `xcassets/swift4.stencil` templat
 
 It supports most of the same options, and produces mostly the same output.
 
+♻️ Changed:
+* `name` property for assets is `fileprivate`, instead of using `accessModifier` option value (`internal` by default)
+
 🔥 Removed:
 * Compiler checks for platform, as SwiftUI supports all Apple platforms
 * Generation for data assets (including the `dataType` option parameter), as this template focuses on SwiftUI support
