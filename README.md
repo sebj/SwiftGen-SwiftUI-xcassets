@@ -1,6 +1,6 @@
 # A [SwiftGen](https://github.com/SwiftGen/SwiftGen) SwiftUI template for Asset Catalogs
 
-This template is a fork of SwiftGen's bundled `xcassets/swift4.stencil` template, to generate SwiftUI supporting type-safe code for colors and images in an Xcode asset catalog (`*.xcassets`).
+This template is a fork of [SwiftGen's bundled `xcassets/swift4.stencil` template](https://github.com/SwiftGen/SwiftGen/blob/master/templates/xcassets/swift4.stencil), to generate SwiftUI supporting type-safe code for colors and images in an Xcode asset catalog (`*.xcassets`).
 
 It supports most of the same options, and produces mostly the same output.
 
