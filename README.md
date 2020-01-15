@@ -4,13 +4,13 @@ This template is a fork of SwiftGen's bundled `xcassets/swift4.stencil` template
 
 It supports most of the same options, and produces mostly the same output.
 
-Removed:
+🔥 Removed:
 * Compiler checks for platform, as SwiftUI supports all Apple platforms
-* Generation for data assets (this template focuses on SwiftUI support)
-* Option parameters `colorAliasName` and `imageAliasName`, as SwiftUI uses `Color` and `Image` on all platforms
+* Generation for data assets (including the `dataType` option parameter), as this template focuses on SwiftUI support
+* Option parameters `colorAliasName`, and `imageAliasName`, as SwiftUI uses `Color` and `Image` types on all platforms
 
 ## Usage Example
-```
+```swift
 // You can create new images with the convenience constructor like this:
 let bananaImage = Image(Asset.Exotic.banana)
 let privateImage = Image(Asset.private)
@@ -23,7 +23,7 @@ let samePrivateImage = Asset.private.image
 let primaryColor = Asset.Theme.primary.color
 let backgroundColor = Asset.Theme.background.color
 
-// Or as an alternative, you use the convenience constructor like this:
+// Or as an alternative, you can use the convenience constructor like this:
 let samePrimaryColor = Color(asset: Asset.Theme.primary)
 let sameBackgroundColor = Color(asset: Asset.Theme.background)
 ```
