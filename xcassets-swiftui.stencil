@@ -73,7 +73,7 @@ import SwiftUI
 // MARK: - Implementation Details
 
 {{accessModifier}} struct {{colorType}} {
-  fileprivate var name: String
+  fileprivate let name: String
 
   {{accessModifier}} var color: Color {
     Color(self)
@@ -90,7 +90,7 @@ import SwiftUI
 }
 
 {{accessModifier}} struct {{imageType}} {
-  fileprivate var name: String
+  fileprivate let name: String
 
   {{accessModifier}} var image: Image {
     Image(name)
