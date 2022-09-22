@@ -93,7 +93,7 @@ import SwiftUI
   fileprivate let name: String
 
   {{accessModifier}} var image: Image {
-    Image(name)
+    Image(self)
   }
 }
 
